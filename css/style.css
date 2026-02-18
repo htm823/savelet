@@ -1,0 +1,115 @@
+:root {
+  --color-bg-primary: #f5f3f7;
+  --color-bg-secondary: #e8e4ec;
+  --color-bg-tertiary: #faf8fc;
+  --color-brand-primary: #8a73a0;
+  --color-brand-primary-hover: #9a83b0;
+  --color-brand-strong: #6b5579;
+  --color-brand-strong-hover: #7b6589;
+  --color-accent-soft: #a08fb8;
+  --color-accent-soft-bg: #ffffff;
+  --color-text-primary: #3d3545;
+  --color-text-secondary: #5a4a65;
+  --color-text-muted: #7d6e8a;
+  --color-border-soft: #e0d7ea;
+  --color-border-default: #d4c9e0;
+  --color-lightest: #fff;
+  /* ===== Font Family ===== */
+  --font-family-primary: "Inter", sans-serif;
+  /* ===== Spacing ===== */
+  --space-0: 0rem;
+  --space-1: 0.8rem;
+  --space-2: 1.6rem;
+  --space-3: 2.4rem;
+  --space-4: 3.2rem;
+  --space-5: 4.8rem;
+  --space-6: 6.4rem;
+  --space-7: 9.6rem;
+  --space-8: 12.8rem;
+  --space-9: 16rem;
+  /* ===== Layout Key ===== */
+  --container-max: 120rem;
+  --container-padding: 6.4rem;
+  --hero-top: 12.8rem;
+  --section-gap: 16rem;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+}
+
+.container {
+  width: var(--container-max);
+  margin: 0 auto;
+}
+
+.header {
+  padding: var(--space-3) 0 var(--space-4);
+}
+.header__title {
+  color: var(--color-brand-primary);
+  font-size: 3.2rem;
+}
+
+.save__field {
+  padding: var(--space-2) 0 0 0;
+}
+.save__field:nth-child(2) {
+  padding: var(--space-3) 0 0 0;
+}
+.save__label {
+  display: flex;
+  width: 10%;
+  color: var(--color-text-secondary);
+  padding: 0 0 var(--space-1) 0;
+}
+.save__input {
+  border: 0.1rem solid var(--color-brand-primary);
+  display: block;
+  width: 50%;
+  border-radius: 0.4rem;
+  padding: 1rem var(--space-1) var(--space-1) var(--space-1);
+  font-size: 1.6rem;
+  color: var(--color-text-primary);
+}
+.save__btn {
+  margin: var(--space-5) 0 0 0;
+  background-color: var(--color-brand-primary);
+  border: none;
+  display: block;
+  width: 15%;
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  color: var(--color-lightest);
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.save__btn:hover {
+  background-color: var(--color-brand-primary-hover);
+}
+
+.footer {
+  padding: var(--space-7) 0 var(--space-5);
+}
+.footer__copyright {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=style.css.map */
