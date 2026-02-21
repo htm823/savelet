@@ -19,7 +19,7 @@
 	</header>
 	<main>
 		<div class="save container">
-			<form class="save__form" action="" method="POST">
+			<form class="save__form" action="save.php" method="POST">
 				<div class="save__field">
 					<label for="name" class="save__label form-label">Name</label>
 					<input id="name" class="save__input" name="name" type="text" placeholder="My Favorite">
