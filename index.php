@@ -45,6 +45,7 @@
 			<small class="footer__copyright">&copy; 2026 Savelet</small>
 		</div>
 	</footer>
+	<script src="main.js"></script>
 </body>
 
 </html>
