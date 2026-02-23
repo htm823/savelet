@@ -23,6 +23,9 @@
 
 	--color-lightest: #fff;
 
+	--color-success-bg: #eef6f2;
+	--color-success: #8fbfa8;
+
 	/* ===== Font Family ===== */
 	--font-family-primary: 'Inter', sans-serif;
 
@@ -112,8 +115,34 @@ body {
 		color: var(--color-text-primary);
 	}
 
-	&__btn {
+	&__result {
 		margin: var(--space-4) 0 0 0;
+	}
+
+	&__toast {
+		background-color: var(--color-success-bg);
+		width: 18%;
+		padding: var(--space-1) var(--space-2);
+		color: var(--color-success);
+		border-radius: 0.4rem;
+		font-size: 1.6rem;
+		border: .1rem solid var(--color-success);
+		margin: var(--space-1) 0 0;
+		justify-content: center;
+		align-items: center;
+		gap: var(--space-1);
+		display: none;
+
+		span {
+			display: block;
+		}
+
+		&.active {
+			display: flex;
+		}
+	}
+
+	&__btn {
 		background-color: var(--color-brand-primary);
 		border: none;
 		display: block;

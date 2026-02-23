@@ -14,6 +14,8 @@
   --color-border-soft: #e0d7ea;
   --color-border-default: #d4c9e0;
   --color-lightest: #fff;
+  --color-success-bg: #eef6f2;
+  --color-success: #8fbfa8;
   /* ===== Font Family ===== */
   --font-family-primary: "Inter", sans-serif;
   /* ===== Spacing ===== */
@@ -90,8 +92,30 @@ body {
   font-size: 1.6rem;
   color: var(--color-text-primary);
 }
-.save__btn {
+.save__result {
   margin: var(--space-4) 0 0 0;
+}
+.save__toast {
+  background-color: var(--color-success-bg);
+  width: 18%;
+  padding: var(--space-1) var(--space-2);
+  color: var(--color-success);
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid var(--color-success);
+  margin: var(--space-1) 0 0;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-1);
+  display: none;
+}
+.save__toast span {
+  display: block;
+}
+.save__toast.active {
+  display: flex;
+}
+.save__btn {
   background-color: var(--color-brand-primary);
   border: none;
   display: block;
