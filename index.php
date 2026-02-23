@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Savelet</title>
 </head>
@@ -36,7 +37,13 @@
 					<label for="url" class="save__label form-label">URL</label>
 					<input id="url" class="save__input" name="url" type="url" maxlength="2048" placeholder="https://my-favorite-website.com">
 				</div>
-				<button id="save-btn" class="save__btn btn" type="submit">Save</button>
+				<div class="save__result">
+					<button id="save-btn" class="save__btn btn" type="submit">Save</button>
+					<p class="save__toast">
+						<span>Successfully Saved</span>
+						<span><i class="fa-solid fa-check"></i></span>
+					</p>
+				</div>
 			</form>
 		</div>
 	</main>
